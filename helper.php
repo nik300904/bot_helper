@@ -13,15 +13,37 @@ define("TG_USER_ID", 464404946);
 
 // https://api.telegram.org/bot5862833450:AAHhzSs0lsfBjf3mUg9BFdLXzPYIMf9bre4/getUpdates
 
-/*$textMessage = "Тестовое asd";
-$textMessage = urlencode($textMessage);
-
-$urlQuery = "https://api.telegram.org/bot" . TG_TOKEN . "/sendMessage?chat_id=" . TG_USER_ID . "&text=" . $textMessage;
-$result = file_get_contents($urlQuery);*/
+//$textMessage = "Тестовое asd";
+//$textMessage = urlencode($textMessage);
+//
+//$urlQuery = "https://api.telegram.org/bot" . TG_TOKEN . "/sendMessage?chat_id=" . TG_USER_ID . "&text=" . $textMessage;
+//$result = file_get_contents($urlQuery);
 
 //====================================================================//
 
-// Отправка, удаление сообщений
+// Отправка сообщения
+
+//$getQuery = array(
+//    "chat_id" 	=> TG_USER_ID,
+//    "text"  	=> "Новое сообщение из формы",
+//    "parse_mode" => "html",
+//);
+//$ch = curl_init("https://api.telegram.org/bot". TG_TOKEN ."/sendMessage?" . http_build_query($getQuery));
+//curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+//curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+//curl_setopt($ch, CURLOPT_HEADER, false);
+//
+//$resultQuery = curl_exec($ch);
+//curl_close($ch);
+//
+//$link = "https://api.telegram.org/bot". TG_TOKEN ."/sendMessage?" . http_build_query($getQuery);
+//
+//echo $link;
+//echo $resultQuery;
+
+//====================================================================//
+
+// Удаление сообщений
 
 //$getQuery = array(
 //    "chat_id" => TG_USER_ID,
@@ -233,7 +255,7 @@ $result = file_get_contents($urlQuery);*/
 // Создать хук на сайт
 
 //$getQuery = array(
-//    'url' => 'https://bot-helper-n7bz-quwmk7afw-nik300904.vercel.app'
+//    'url' => 'https://b500-85-249-41-174.eu.ngrok.io/bot/helper.php'
 //);
 //
 //$ch = curl_init("https://api.telegram.org/bot" . TG_TOKEN . "/setWebhook?" . http_build_query($getQuery));
