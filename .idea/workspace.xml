@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc030bc4-cdde-40d8-8296-f320937e8b0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Bot.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Снимок экрана от 2022-12-06 11-53-19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Снимок экрана от 2022-12-06 11-56-06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Снимок экрана от 2022-12-06 11-56-14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Снимок экрана от 2022-12-06 11-56-56.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/message.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/opt/lampp/htdocs/bot",
+    "last_opened_file_path": "/opt/lampp/htdocs/bot/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -45,7 +53,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="PHP Script.helper.php">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHP Script.Bot.php">
+    <configuration name="Bot.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Bot.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="aa.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/aa.php">
+      <method v="2" />
+    </configuration>
     <configuration name="asd.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/asd.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -54,12 +73,14 @@
       </CommandLine>
       <method v="2" />
     </configuration>
-    <configuration name="helper.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/helper.php">
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.helper.php" />
+        <item itemvalue="PHP Script.Bot.php" />
+        <item itemvalue="PHP Script.aa.php" />
+        <item itemvalue="PHP Script.index.php" />
         <item itemvalue="PHP Script.asd.php" />
       </list>
     </recent_temporary>
@@ -75,7 +96,13 @@
       <workItem from="1669935302162" duration="2284000" />
       <workItem from="1669937632823" duration="3052000" />
       <workItem from="1670007052044" duration="7277000" />
-      <workItem from="1670016728388" duration="6827000" />
+      <workItem from="1670016728388" duration="7528000" />
+      <workItem from="1670189303534" duration="2374000" />
+      <workItem from="1670240071381" duration="6026000" />
+      <workItem from="1670386848977" duration="26000" />
+      <workItem from="1670400107663" duration="3560000" />
+      <workItem from="1670570527079" duration="1862000" />
+      <workItem from="1670845026300" duration="7351000" />
     </task>
     <servers />
   </component>
