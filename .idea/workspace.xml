@@ -35,7 +35,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/opt/lampp/htdocs/bot/img",
+    "last_opened_file_path": "/opt/lampp/htdocs/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,7 +93,7 @@
       <workItem from="1670386848977" duration="26000" />
       <workItem from="1670400107663" duration="3560000" />
       <workItem from="1670570527079" duration="1862000" />
-      <workItem from="1670845026300" duration="8221000" />
+      <workItem from="1670845026300" duration="9753000" />
     </task>
     <servers />
   </component>

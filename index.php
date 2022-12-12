@@ -18,6 +18,8 @@ $textMessage = mb_strtolower($arrDataAnswer["message"]["text"]);
 $textPhoto = mb_strtolower($arrDataAnswer["message"]["caption"]);
 $chatId = $arrDataAnswer["message"]["chat"]["id"];
 
+$randNumber = [];
+
 $bot->writeLogFile($arrDataAnswer, true);
 
 if(!empty($arrDataAnswer["message"]["photo"])) {
@@ -41,7 +43,7 @@ if($textMessage == 'привет') {
     $listFile = $bot->list_files(__DIR__ . "/img/");
 
     $max = count($listFile) - 1;
-    $randIdFile = rand(0, $max);
+    $randIdFile = mt_rand(0, $max);
 
     $filePath = __DIR__ . "/img/" . $listFile[$randIdFile];
 
@@ -83,7 +85,7 @@ if(!empty($documentData) and $textPhoto == 'август') {
     $listFile = $bot->list_files(__DIR__ . "/img/");
 
     $max = count($listFile) - 1;
-    $randIdFile = rand(0, $max);
+    $randIdFile = mt_rand(0, $max);
 
     $filePath = __DIR__ . "/img/" . $listFile[$randIdFile];
 
