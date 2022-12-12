@@ -28,13 +28,31 @@ if(!empty($arrDataAnswer["message"]["photo"])) {
     $documentData = array_pop($arrDataAnswer["message"]["document"]);
 }
 
-if($textMessage == 'привет') {
-    $textMessage_bot = "Привет! Скинь фото красивой девочки :)";
+if($textMessage == 'привет' or $textMessage == '/start') {
+    $textMessage_bot = 'Привет! Нажми на кнопку "Ссылки" или "Хочу фото"';
 
-    $arrayQuery = array(
-        'chat_id' 		=> $chatId,
-        'text'			=> $textMessage_bot,
-        'parse_mode'	=> "html",
+    $arrayQuery = array (
+        "chat_id" => $chatId,
+        "text" => "$textMessage_bot",
+        'reply_markup' => json_encode(
+            array(
+                'keyboard' => array(
+                    array(
+                        array(
+                            'text' => 'Ссылки',
+                            'callback_data' => 'test_2'
+                        ),
+
+                        array(
+                            'text' => 'Хочу фото',
+                            'callback_data' => 'test_2'
+                        ),
+                    )
+                ),
+                'one_time_keybord' => false,
+                'resize_keyboard' => true,
+            )
+        )
     );
     $bot->TG_sendMessage($arrayQuery);
 } elseif($textMessage == 'хочу фото') {
