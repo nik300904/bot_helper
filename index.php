@@ -3,10 +3,12 @@
 require_once 'Bot.php';
 
 ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 ini_set('display_startup_errors', 1);
 
 define("TG_TOKEN", "5862833450:AAHhzSs0lsfBjf3mUg9BFdLXzPYIMf9bre4");
+define("TG_USER_ID", 464404946);
+define("TG_USER_KRIST", 1031877772);
 
 $bot = new Bot();
 
@@ -20,7 +22,7 @@ $chatId = $arrDataAnswer["message"]["chat"]["id"];
 
 $randNumber = [];
 
-$bot->writeLogFile($arrDataAnswer, true);
+$bot->writeLogFile($arrDataAnswer);
 
 if(!empty($arrDataAnswer["message"]["photo"])) {
     $documentData = array_pop($arrDataAnswer["message"]["photo"]);
@@ -153,6 +155,85 @@ if(!empty($documentData) and $textPhoto == 'август') {
         )),
     );
     $bot->TG_sendPhoto($arrayQuery);
+}
+
+if (date('i:s') == '5:00' or date('i:s') == '5:01' or date('i:s') == '5:02') {
+    $a = file_get_contents("https://complimentos.com/compliments/100-komplimentov-devushke-lyubimoj-podruge.html");
+
+    preg_match_all("/<p>(.+?)<\/p>/ius", $a, $matches);
+
+    $newMatches = [];
+
+    for ($i = 1; $i <= 201; $i += 1) {
+        if ($i % 2 != 0 and $i < 100) {
+            array_push($newMatches, $matches[1][$i]);
+        } elseif ($i % 2 == 0 and $i > 100) {
+            array_push($newMatches, $matches[1][$i]);
+        }
+
+    }
+
+    $strMatches = implode('', $newMatches);
+
+    preg_match_all('/[а-яёА-ЯЁ]+/u', $strMatches, $arr);
+
+    $newArrMsg = [];
+
+    foreach ($arr as $keys => $item) {
+        $newArrMsg = $item;
+    }
+
+    $x = file_get_contents(__DIR__ . '/number.txt');
+    $textMessage = '';
+    print_r($x);
+
+    if ($x == 0) {
+        $textArr = array_slice($newArrMsg, 0, 9);
+
+        array_splice($newArrMsg, 0, 9);
+
+        $newArrMsg = implode(' ', $newArrMsg);
+        file_put_contents(__DIR__ . '/log.txt', $newArrMsg);
+
+        $text = implode(', ', $textArr);
+        $text = mb_strtolower($text, 'UTF-8');
+
+        $textMessage = 'Ты ' . $text;
+
+        $arrayQuery = array(
+            'chat_id' => TG_USER_KRIST,
+            'text' => $textMessage,
+            'parse_mode' => "html",
+        );
+
+        $bot->TG_sendMessage($arrayQuery);
+        $x++;
+        file_put_contents(__DIR__ . '/number.txt', $x);
+    } else {
+        $newArrMsg = file_get_contents(__DIR__ . '/log.txt');
+        $newArrMsg = explode(' ', $newArrMsg);
+        file_put_contents(__DIR__ . '/asf.txt', $newArrMsg);
+
+        $textArr = array_slice($newArrMsg, 0, 9);
+
+        array_splice($newArrMsg, 0, 9);
+
+        $text = implode(', ', $textArr);
+        $text = mb_strtolower($text, 'UTF-8');
+
+        $newMessage = 'Ты ' . $text;
+
+        $arrayQuery = array(
+            'chat_id' => TG_USER_KRIST,
+            'text' => $newMessage,
+            'parse_mode' => "html",
+        );
+
+        $bot->TG_sendMessage($arrayQuery);
+
+        $newArrMsg = implode(' ', $newArrMsg);
+        file_put_contents(__DIR__ . '/log.txt', $newArrMsg);
+    }
 }
 
 //if($arrDataAnswer["callback_query"]) {

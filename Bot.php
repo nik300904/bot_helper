@@ -7,7 +7,7 @@ class Bot
         $log_file_name = __DIR__ . "/message.txt";
         if ( $clear == false ) {
             $now = date("Y-m-d H:i:s" . PHP_EOL);
-            file_put_contents($log_file_name, $now . "" . print_r($string, true) . "\r\n", FILE_APPEND);
+            file_put_contents($log_file_name, $now . "" . print_r($string, true) . "\r\n", FILE_APPEND . PHP_EOL);
         } else {
             $now = date("Y-m-d H:i:s". PHP_EOL);
             file_put_contents($log_file_name, '');
