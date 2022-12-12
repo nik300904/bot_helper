@@ -15,6 +15,7 @@ $data = file_get_contents('php://input');
 $arrDataAnswer = json_decode($data, true);
 
 $textMessage = mb_strtolower($arrDataAnswer["message"]["text"]);
+$textPhoto = mb_strtolower($arrDataAnswer["message"]["caption"]);
 $chatId = $arrDataAnswer["message"]["chat"]["id"];
 
 $bot->writeLogFile($arrDataAnswer, true);
@@ -53,8 +54,7 @@ if($textMessage == 'привет') {
 
 }
 
-if(!empty($documentData)) {
-
+if(!empty($documentData) and $textPhoto == 'август') {
     $arrayQuery = array(
         "file_id" => $documentData["file_id"],
     );
@@ -77,7 +77,6 @@ if(!empty($documentData)) {
         'parse_mode' => "html",
     );
     $bot->TG_sendMessage($arrayQuery);
-
 } elseif($textMessage == 'ссылки') {
     $textMessage_bot = "Вот ссылки";
 

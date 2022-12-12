@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc030bc4-cdde-40d8-8296-f320937e8b0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Bot.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Снимок экрана от 2022-12-06 11-53-19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Снимок экрана от 2022-12-06 11-56-06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Снимок экрана от 2022-12-06 11-56-14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Снимок экрана от 2022-12-06 11-56-56.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +93,7 @@
       <workItem from="1670386848977" duration="26000" />
       <workItem from="1670400107663" duration="3560000" />
       <workItem from="1670570527079" duration="1862000" />
-      <workItem from="1670845026300" duration="7351000" />
+      <workItem from="1670845026300" duration="8221000" />
     </task>
     <servers />
   </component>
